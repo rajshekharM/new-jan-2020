@@ -1,0 +1,10 @@
+version: '3.0'
+services: 
+  imrsv-ml-test:    
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports: 
+      - "8888:8888"
+    volumes: 
+      - .:/home/python_user/app/
